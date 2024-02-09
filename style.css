@@ -1,0 +1,101 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --bg-color: #000;
+    --text-color: #fff;
+    --btn-bg-color: #8b99db;
+    --btn-text-color: #0a151d;
+}
+
+[data-theme="dark"] {
+
+    --bg-color: #fff;
+    --text-color: #000;
+    --btn-bg-color: #0a151d;
+    --btn-text-color: #8b99db;
+}
+
+[data-theme="blue"] {
+
+    --bg-color: #4846c4;
+    --text-color: #ce9846;
+    --btn-bg-color: #0d2b41;
+    --btn-text-color: #dfe2ec;
+}
+
+body {
+
+    background: var(--bg-color);
+}
+
+.container .change-theme-btn {
+
+    background: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+/* body.light {
+
+    background: rgb(232, 238, 238);
+}
+
+body.dark {
+
+    background: rgb(17, 14, 39);
+} */
+
+.container {
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* .container .change-theme-btn.light {
+
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+.container .change-theme-btn.dark {
+
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+} */
+
+.container h1 {
+
+    color: rgb(211, 200, 221);
+}
+
+.container button {
+
+    padding: 12px 20px;
+    border: none;
+    background: #000;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
